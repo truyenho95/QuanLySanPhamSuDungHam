@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+th, td {
+  padding: 10px 20px;
+}
+
+input.changeInput {
+  display: none;
+}
+
+.display-block {
+  display: inline-block !important;
+}
