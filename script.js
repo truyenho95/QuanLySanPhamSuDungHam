@@ -47,7 +47,10 @@ function setEditProductBtn() {
       }
       else if (editBtn[i].value=='Save') {
         listProduct[i] = document.querySelector(`input[data-id="${i}"]`).value;
-        reset();
+        if (listProduct[i]=='')
+          alert('Tên sản phẩm thêm vào không được để trống!');
+        else
+          reset();
       }
     });
   };
